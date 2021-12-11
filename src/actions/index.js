@@ -19,3 +19,13 @@ export const removeTodo=()=>{
         type:"REMOVE_TODO"
     }
 }
+
+export const editTodo=(data)=>{
+    return{
+        type:"EDIT_TODO",
+        payload:{
+            data:data
+        }
+
+    }
+}

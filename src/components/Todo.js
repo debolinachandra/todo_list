@@ -25,6 +25,7 @@ return (
                     list.map((elem) => (
                         <div className="eachItems" key={elem.id}>
                             <h3>{elem.data}</h3>
+                            <Link to={`/edit/${elem.id}`} className="btn btn-small btn-primary mr-2">Edit</Link>
                             <div className="todo-btn">
                                 <i className="fa fa-trash-alt add-btn" title="delete item" onClick={() => dispatch(deleteTodo(elem.id))}></i>
                             </div>
